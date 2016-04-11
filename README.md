@@ -2,6 +2,8 @@
 
 Event.js is an improved JavaScript event-driven framework running on Node.js and in the browser.
 
+[![Build Status](https://travis-ci.org/no-ppt/eventjs.svg?branch=master)](https://travis-ci.org/no-ppt/eventjs)
+
 ## Installation
 
 install with npm:
@@ -81,7 +83,7 @@ $ npm test
 
 ## Contributing
 
-If you want to contribute this project, please send email to [hermit@no-ppt.com](mailto:hermit@no-ppt.com)
+If you want to contribute to this project, please send email to [hermit@no-ppt.com](mailto:hermit@no-ppt.com)
 
 ## License
 
