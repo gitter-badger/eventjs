@@ -6,3 +6,4 @@ before_script:
   - npm install -g mocha
   - npm install -g babel-cli
   - npm install -g uglifyjs
+  - npm install -g webpack
