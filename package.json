@@ -1,16 +1,19 @@
 {
   "name": "eventjs",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Event.js is an improved event-driven framework that works in both Node.js and the browser.",
   "main": "dist/event.min.js",
   "scripts": {
-    "clean": "rm -rf dist",
+    "clean-all": "npm run clean-dist && npm run clean-tmp",
+    "clean-dist": "rm -rf dist",
+    "clean-tmp": "rm -rf .tmp",
     "test": "mocha --compilers js:babel-register test/*.es6",
-    "compile": "babel src -d dist",
-    "combine": "node node_modules/requirejs/bin/r.js -o build/build.js",
+    "compile": "babel src -d .tmp",
+    "combine": "webpack",
     "uglify": "uglifyjs dist/event.js -c -o dist/event.min.js --source-map dist/event.js.map",
-    "prebuild": "npm run clean",
-    "build": "npm run compile && npm run combine && npm run uglify"
+    "prebuild": "npm run clean-all",
+    "build": "npm run compile && npm run combine && npm run uglify",
+    "postbuild": "npm run clean-tmp"
   },
   "contributors": [
     {

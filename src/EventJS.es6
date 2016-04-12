@@ -6,7 +6,8 @@ import EventEmitter from './EventEmitter';
  * @type {object}
  */
 let EventJS = {
-    version: '1.0.0'
+    version     : '1.0.1',
+    dependencies: {}
 };
 
 // Register modules.
