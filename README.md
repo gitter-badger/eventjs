@@ -1,5 +1,7 @@
 # Event.js
 
+[![Join the chat at https://gitter.im/no-ppt/eventjs](https://badges.gitter.im/no-ppt/eventjs.svg)](https://gitter.im/no-ppt/eventjs?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 Event.js is an improved JavaScript event-driven framework running on Node.js and in the browser.
 
 [![Build Status](https://travis-ci.org/no-ppt/eventjs.svg?branch=master)](https://travis-ci.org/no-ppt/eventjs)
